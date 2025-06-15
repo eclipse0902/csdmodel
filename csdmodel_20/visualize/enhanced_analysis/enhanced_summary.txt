@@ -1,0 +1,85 @@
+
+?? ENHANCED EEG CONNECTIVITY MODEL - RECONSTRUCTION ANALYSIS REPORT
+================================================================================
+
+?? ENHANCED ARCHITECTURE OVERVIEW
+========================================
+Model Type: Enhanced EEG Connectivity Model
+Architecture: Structured Feature Extraction + Global Attention + Frequency-Specific Heads
+Total Parameters: 3,708,646
+Analyzed Samples: 5
+
+?? COMPONENT BREAKDOWN:
+Feature Extraction: 77,121 parameters
+Global Attention: 3,388,480 parameters
+Reconstruction Heads: 243,045 parameters
+
+?? ENHANCED PERFORMANCE METRICS
+========================================
+Phase Error (Overall): 21.52¡Æ ¡¾ 14.08¡Æ
+   Target: < 25.0¡Æ | Status: ? ACHIEVED
+   Range: 5.49¡Æ - 39.03¡Æ
+
+Alpha Phase Error: 19.15¡Æ ¡¾ 12.36¡Æ
+   Target: < 20.0¡Æ | Status: ? ACHIEVED
+   Range: 4.21¡Æ - 37.37¡Æ
+
+Magnitude Error: 7.8% ¡¾ 1.0%
+   Target: < 8.0% | Status: ? ACHIEVED
+   Range: 6.4% - 8.7%
+
+Alpha Magnitude Error: 0.0% ¡¾ 0.0%
+   Target: < 8.0% | Status: ? ACHIEVED
+   Range: 0.0% - 0.1%
+
+Signal-to-Noise Ratio: 18.52 dB ¡¾ 1.11 dB
+   Target: > 0.0 dB | Status: ? ACHIEVED
+   Range: 16.41 dB - 19.70 dB
+
+Correlation: 0.993 ¡¾ 0.002
+   Target: > 0.800 | Status: ? ACHIEVED
+   Range: 0.990 - 0.995
+
+?? ENHANCED ACHIEVEMENTS
+========================================
+Overall Success Rate: 80.0%
+
+Individual Achievement Status:
+   ?? Phase Error < 25¡Æ: ? 
+      (3/5 samples)
+   
+   ?? Alpha Phase < 20¡Æ: ?
+      (2/5 samples)
+   
+   ?? Alpha Magnitude < 8%: ?
+      (5/5 samples)
+   
+   ?? Positive SNR: ?
+      (5/5 samples)
+   
+   ?? High Correlation: ?
+      (5/5 samples)
+
+?? ENHANCED ARCHITECTURE FEATURES:
+   ? Structured Feature Extraction (preserves 15¡¿2 structure)
+   ? Global 361¡¿361 Attention (full connectivity modeling)
+   ? Frequency-Specific Reconstruction (15 independent heads)
+   ? Enhanced Loss Calculator (4 core components)
+   ? Brain Region Awareness
+   ? Memory Optimization (gradient checkpointing)
+
+?? ENHANCED INTERPRETATION:
+
+? GOOD ENHANCED PERFORMANCE! The model shows solid reconstruction capabilities 
+with the new architecture. The structured feature extraction and global attention 
+are working effectively. Consider fine-tuning hyperparameters for better performance.
+
+
+?? ENHANCED RECOMMENDATIONS:
+
+================================================================================
+?? Enhanced Report generated with new EEG Connectivity Model Visualizer
+?? For detailed metrics, see enhanced_reconstruction_report.json
+?? For visual analysis, see enhanced plots in output directory
+?? Architecture: Structured + Global Attention + Frequency-Specific
+? Scale: 3,708,646 parameters (vs original 59k)

@@ -1,0 +1,29 @@
+EEG Connectivity Visualization Summary (New Architecture)
+============================================================
+
+Generated on: 2025-06-14 07:55:59
+Model: /home/mjkang/cbramod/20newmodel/checkpoints/best_pretrain_model.pth
+Model Available: True
+New Architecture: True
+Dataset: /remotenas0/database/TUH_Corpus/tuh_eeg_abnormal/v3.0.1/edf/normalized_20freq/train
+Dataset Available: True
+Samples processed: 3
+Output directory: /home/mjkang/cbramod/20newmodel/visualize/reconstruct_visualize
+Device: cuda
+
+Generated files (9):
+ 1. sample_1_label_0_frequency_bands_new_model.png
+ 2. sample_1_label_0_mask_0.3_new_model.png
+ 3. sample_1_label_0_mask_0.5_new_model.png
+ 4. sample_2_label_0_frequency_bands_new_model.png
+ 5. sample_2_label_0_mask_0.3_new_model.png
+ 6. sample_2_label_0_mask_0.5_new_model.png
+ 7. sample_3_label_0_frequency_bands_new_model.png
+ 8. sample_3_label_0_mask_0.3_new_model.png
+ 9. sample_3_label_0_mask_0.5_new_model.png
+
+Visualization Details:
+- Mask ratios tested: [0.3, 0.5]
+- Frequency bands: ['delta', 'theta', 'alpha', 'beta1', 'beta2', 'gamma']
+- Components visualized: Real, Imaginary, Magnitude, Phase
+- Metrics computed: MSE, Phase Error, Correlation, SNR

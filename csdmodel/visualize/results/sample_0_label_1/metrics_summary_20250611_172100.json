@@ -1,0 +1,52 @@
+{
+  "timestamp": "20250611_172100",
+  "metrics": {
+    "magnitude_relative_error": 55.822062492370605,
+    "phase_error_degrees": 74.59375951070571,
+    "correlation": 0.6601922113474337,
+    "snr_db": 3.4965219760331356,
+    "masked_magnitude_error": 94.79751586914062,
+    "masked_phase_error_degrees": 95.14779313851172,
+    "masked_correlation": 0.023176401107053254,
+    "unmasked_magnitude_error": 17.06194132566452,
+    "mask_ratio": 0.4986149584487535,
+    "masked_positions": 2700,
+    "total_positions": 5415
+  },
+  "configuration": {
+    "num_frequencies": 15,
+    "num_electrodes": 19,
+    "frequency_bands": {
+      "delta": [
+        0,
+        1
+      ],
+      "theta": [
+        2,
+        3
+      ],
+      "alpha": [
+        4,
+        5,
+        6
+      ],
+      "beta": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "brain_regions": {
+      "frontal": 7,
+      "central": 3,
+      "parietal": 3,
+      "temporal": 4,
+      "occipital": 2
+    }
+  }
+}

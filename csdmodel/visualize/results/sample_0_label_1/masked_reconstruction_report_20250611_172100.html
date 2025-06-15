@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>?? Masked EEG Reconstruction Report - 20250611_172100</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f8f9fa; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; }
+        .section { background-color: white; margin: 20px 0; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .metric-card { padding: 20px; border-radius: 8px; text-align: center; color: white; }
+        .metric-card.good { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .metric-card.warning { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333; }
+        .metric-card.poor { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .metric-value { font-size: 28px; font-weight: bold; margin-bottom: 5px; }
+        .metric-label { font-size: 14px; opacity: 0.9; }
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px; }
+        .image-card { text-align: center; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .image-card img { max-width: 100%; border-radius: 8px; }
+        .highlight { background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%); padding: 15px; border-radius: 8px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>?? Masked EEG Reconstruction Analysis</h1>
+        <p><strong>Focus:</strong> How well does the model reconstruct HIDDEN connectivity patterns?</p>
+        <p>Generated on: 20250611_172100 | 15-Frequency Band Model</p>
+    </div>
+    
+    <div class="section">
+        <h2>?? Masked Region Performance</h2>
+        <div class="highlight">
+            <strong>Key Question:</strong> Can the model accurately fill in missing EEG connectivity information?
+            <br><strong>Analysis:</strong> Red metrics show performance on masked (hidden) regions vs blue (visible) regions.
+        </div>
+        <div class="metrics">
+            <div class="metric-card poor">
+                <div class="metric-value">94.8%</div>
+                <div class="metric-label">?? Masked Magnitude Error<br>(Target: &lt;15%)</div>
+            </div>
+            <div class="metric-card poor">
+                <div class="metric-value">95.1¡Æ</div>
+                <div class="metric-label">?? Masked Phase Error<br>(Target: &lt;30¡Æ)</div>
+            </div>
+            <div class="metric-card poor">
+                <div class="metric-value">0.023</div>
+                <div class="metric-label">?? Masked Correlation<br>(Target: &gt;0.7)</div>
+            </div>
+            <div class="metric-card good">
+                <div class="metric-value">49.9%</div>
+                <div class="metric-label">?? Masked Ratio<br>(2,700 positions)</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>?? Masked vs Unmasked Comparison</h2>
+        <p><strong>Masked Error:</strong> 94.8% | 
+           <strong>Unmasked Error:</strong> 17.1% | 
+           <strong>Ratio:</strong> 5.56x</p>
+        <p>?? Poor - Model struggles with hidden regions</p>
+    </div>
+    
+    <div class="section">
+        <h2>?? Visualization Analysis</h2>
+        <div class="image-grid">
+
+            <div class="image-card">
+                <h3>Overview</h3>
+                <img src="01_mag_phase_overview_20250611_172100.png" alt="?? Magnitude + Phase + Masking overview with white boundaries showing masked regions">
+                <p style="color: #636e72; font-size: 14px; margin-top: 10px;">?? Magnitude + Phase + Masking overview with white boundaries showing masked regions</p>
+            </div>
+
+            <div class="image-card">
+                <h3>Frequency Masked</h3>
+                <img src="02_frequency_masked_20250611_172100.png" alt="?? Frequency band analysis focusing on masked region reconstruction quality">
+                <p style="color: #636e72; font-size: 14px; margin-top: 10px;">?? Frequency band analysis focusing on masked region reconstruction quality</p>
+            </div>
+
+            <div class="image-card">
+                <h3>Masked Statistics</h3>
+                <img src="03_masked_statistics_20250611_172100.png" alt="?? Statistical analysis comparing masked vs unmasked region performance">
+                <p style="color: #636e72; font-size: 14px; margin-top: 10px;">?? Statistical analysis comparing masked vs unmasked region performance</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>?? Technical Details</h2>
+        <ul>
+            <li><strong>?? Core Question:</strong> How well can the model reconstruct missing EEG connectivity data?</li>
+            <li><strong>Visualization Innovation:</strong> Magnitude + Phase heatmaps with masking overlay (white boundaries)</li>
+            <li><strong>Analysis Focus:</strong> Separate performance metrics for masked vs unmasked regions</li>
+            <li><strong>Model Architecture:</strong> 15-frequency structured feature extraction with global attention</li>
+            <li><strong>Key Features:</strong> White boundaries show masked regions, color intensity shows reconstruction quality</li>
+        </ul>
+    </div>
+    
+    <footer style="text-align: center; color: #74b9ff; margin-top: 40px;">
+        <p><strong>?? Enhanced Masked Reconstruction Analyzer</strong></p>
+        <p>Specialized for evaluating model performance on hidden connectivity patterns</p>
+    </footer>
+</body>
+</html>

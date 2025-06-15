@@ -1,0 +1,13 @@
+{
+  "timestamp": "20250611_133405",
+  "metrics": {
+    "magnitude_relative_error": 64.36299085617065,
+    "phase_error_degrees": 87.47510696456706,
+    "correlation": 0.5483074714954002,
+    "snr_db": 2.688065454643814,
+    "masked_magnitude_error": 95.15379071235657,
+    "masked_phase_error_degrees": 117.64052815090166,
+    "masked_correlation": -0.040207151016405124,
+    "unmasked_magnitude_error": 33.742305636405945,
+    "mask_ratio": 0.4986149584487535,
+    "masked_positions": 
